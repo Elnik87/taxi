@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h3 class="widget-title" style="text-align: center" >Связаться с нами</h3>
+                <div class="contact-form">
+                    <form action="/contact" name="contactform" id="contactform" method="post">
+                        <p>
+                            <input name="name" type="text" id="name" placeholder="Введите свое имя">
+                        </p>
+                        <p>
+                            <input name="last_name" type="text" id="last_name" placeholder="Введите фамилию">
+                        </p>
+                        <p>
+                            <input name="phone" type="text" id="phone" placeholder="Введите номер телефона">
+                        </p>
+                        <p>
+                            <textarea name="comment" id="comment" placeholder="Введите комментарии (возможно пожелания, иные способы связи, время когда Вас лучше не беспокоить или что-то еще)"></textarea>
+                        </p>
+                        <input type="submit" class="mainBtn" value="Отправить">
+                    </form>
+                </div> <!-- /.contact-form -->
+            </div>
+        </div>
+    </div>
+</div> <!-- /.content-section -->
+
+
+
+{% endblock %}
+    

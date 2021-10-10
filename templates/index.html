@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>
+    Мы - молодая, растущая компания которая набирает доверенную команду,
+    авто это только одно из направлений нашего развития. У нас много преимуществ
+    перед похожими организациями, заключающимися в индивидуальном подходе к каждому
+    нашему сотруднику
+</h2>
+   <div class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-item-1">
+                        <div class="product-thumb">
+                            <img src="{{ url_for ('static', filename='images/1.jpg') }}" alt="Получение лиценции">
+                        </div> <!-- /.product-thumb -->
+                        <div class="product-content">
+                            <h5>Получение лицензии</h5>
+                            <span class="tagline">При сотрудничестве с нами</span>
+                            <span class="price">Оказываем помощь в получении официальной лицензии.
+                                Сотрудничаем с контроллирующими органами в организации перевозок, доставок,
+                            грузоперевозок.</span>
+                        </div> <!-- /.product-content -->
+                    </div> <!-- /.product-item -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-5">
+                    <div class="product-holder">
+                        <div class="product-item-2">
+                            <div class="product-thumb">
+                                <img src="{{ url_for ('static', filename='images/2.jpg') }}" alt="Оклейка авто">
+                            </div> <!-- /.product-thumb -->
+                            <div class="product-content overlay">
+                                <h5>Оклейка авто</h5>
+                                <span class="tagline">При сотруднечестве с нами</span>
+                                <span class="price">Бесплатно</span>
+                                <p>Обклеим Ваше авто в счет будущей прибыли</p>
+                                <p>При сотрудничестве с иной организацией от 4000 рублей</p>
+                            </div> <!-- /.product-content -->
+                        </div> <!-- /.product-item-2 -->
+                        <div class="product-item-2">
+                            <div class="product-thumb">
+                                <img src="{{ url_for ('static', filename='images/3.jpg') }}" alt="Product Title">
+                            </div> <!-- /.product-thumb -->
+                            <div class="product-content overlay">
+                                <h5>Подключение к агрегаторам</h5>
+                                <span class="tagline">При сотруднечестве с нами</span>
+                                <span class="price">Бесплатно</span>
+                                <p>Подключим Вас к всем необходимым агрегаторам такси (Яндекс, Uber итд), а также по жеданию к агрегаторам Вашего региона проживания</p>
+                            </div> <!-- /.product-content -->
+                        </div> <!-- /.product-item-2 -->
+                        <div class="clearfix"></div>
+                    </div> <!-- /.product-holder -->
+                </div> <!-- /.col-md-5 -->
+                <div class="col-md-4">
+                    <div class="product-item-3">
+                        <div class="product-thumb">
+                            <img src="{{ url_for ('static', filename='images/6.jpg') }}" alt="">
+                        </div> <!-- /.product-thumb -->
+                        <div class="product-content">
+                                    <h5>Работа на своем авто</h5>
+                                    <span class="tagline">При сотрудничестве с нами</span>
+                                    <span class="price">1-3% от прибыли в зависимости от индивидуальных факторов, таких как
+                                    опыт работы, класс автомобиля, количества аварий итд</span>
+                        </div> <!-- /.col-md-12 -->
+                    </div> <!-- /.product-content -->
+                </div> <!-- /.product-item-3 -->
+            </div> <!-- /.col-md-4 -->
+        </div> <!-- /.row -->
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="product-item-4">
+                        <div class="product-thumb">
+                            <img src="{{ url_for ('static', filename='images/4.jpg') }}" alt="Product Title">
+                        </div> <!-- /.product-thumb -->
+                        <div class="product-content overlay">
+                            <h5>Работа в любое время</h5>
+                            <span class="tagline">При сотрудничестве с нами</span>
+                            <span class="price">Гибкая система тарификации</span>
+                            <p>Кто-то из нас не имеет возможности смены работы, но есть необходимость в дополнительной
+                                подработке вечерами ил по выходным</p>
+                        </div> <!-- /.product-content -->
+                    </div> <!-- /.product-item-4 -->
+                </div> <!-- /.col-md-4 -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="product-item-4">
+                        <div class="product-thumb">
+                            <img src="{{ url_for ('static', filename='images/5.jpg') }}" alt="Product Title">
+                        </div> <!-- /.product-thumb -->
+                        <div class="product-content overlay">
+                            <h5>Работа без лицензии</h5>
+                            <span class="tagline">При сотруднечестве с нами</span>
+                            <span class="price">Индивидуальный подход</span>
+                            <p>Бывают жизненные обстоятельства, когда есть проблемы в оформлении
+                                необходимых документов. Для этого есть возможность работы без лицензии</p>
+                        </div> <!-- /.product-content -->
+                    </div> <!-- /.product-item-4 -->
+                </div> <!-- /.col-md-4 -->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="product-item-4">
+                        <div class="product-thumb">
+                            <img src="{{ url_for ('static', filename='images/7.jpg') }}" alt="Product Title">
+                        </div> <!-- /.product-thumb -->
+                        <div class="product-content overlay">
+                            <h5>Получение машины под выкуп</h5>
+                            <span class="tagline">При сотрудничестве с нами</span>
+                            <span class="price">Гибкая система выкупа арендуемого авто</span>
+                            <p>Мы заинтересованы в бережном отношении к автомобилям. А когда наш сотрудник
+                            имеет желание выкупить арендуемый автомобиль, отношение будет соответствующим.</p>
+                        </div> <!-- /.product-content -->
+                    </div> <!-- /.product-item-4 -->
+                </div> <!-- /.col-md-4 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /.content-section -->
+
+
+
+{% endblock %}
+    

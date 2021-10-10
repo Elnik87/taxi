@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if drivers|length > 0 %}
+<h1>Поданные заявки</h1>
+
+{% for driver in drivers %}
+<div class="alert alert-info">
+<h5>{{ driver.name }}</h5>
+<h5>{{ driver.last_name }}</h5>
+<h5>{{ driver.phone }}</h5>
+<h5>{{ driver.comment }}</h5>
+<h5>{{ driver.date.date() }}</h5>
+<a href="/admin/{{ driver.id }}/delete" class="btn btn-warning">Удалить</a>
+<a href="/admin/{{ driver.id }}/create" class="btn btn-warning">Редактировать</a>
+</div>
+
+
+{% endfor%}
+{% else %}
+<h2>Еще никто не добавился в нашу контору</h2>
+{% endif %}
+
+{% endblock %}

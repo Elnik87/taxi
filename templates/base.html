@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Лучшая работа в такси</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/normalize.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/templatemo-misc.css') }}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/templatemo-style.css') }}">
+    <script src="{{ url_for ('static', filename='js/vendor/modernizr-2.6.2.min.js') }}"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">Вы используете<strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите Ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируйте Google Chrome Frame</a></p>
+    <![endif]-->
+
+<header class="site-header">
+        <div class="main-header">
+             <div class="logo">
+                 <h1 style="text-align:center"><a href="/">Лучшая работа в такси</a></h1>
+             </div> <!-- /.logo -->
+        </div> <!-- /.main-header -->
+        <div class="main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="list-menu" style="text-align:center">
+                            <ul>
+                                <li><a href="/">Лучшая работа в такси</a></li>
+                                <li><a href="/login">Для сотрудников</a></li>
+                                <li><a href="/contact">Форма обратной связи</a></li>
+                            </ul>
+                        </div> <!-- /.list-menu -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.main-nav -->
+    </header> <!-- /.site-header -->
+
+  {% block content %}  {% endblock %}
+
+ <footer class="site-footer">
+        <div class="our-partner">
+        </div> <!-- /.our-partner -->
+        <div class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">О нас</h3>
+                            <ul class="follow-us">
+                                <li><a href="#"><i class="fa fa-vk"></i>Вконтакте</a></li>
+                                 <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+                            </ul> <!-- /.follow-us -->
+                        </div> <!-- /.footer-widget -->
+                    </div> <!-- /.col-md-3 -->
+                    <div class="col-md-7">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Почему мы?</h3>
+                            Мы - молодая, растущая компания которая набирает доверенную команду,
+                            авто это только одно из направлений нашего развития. У нас много
+                            преимуществ перед похожими организациями, заключающимися в индивидуальном
+                            подходе к каждому нашему сотруднику.
+                        </div> <!-- /.footer-widget -->
+                    </div> <!-- /.col-md-7 -->
+                    <div class="col-md-2">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Полезные ссылки наших партнеров</h3>
+                            <ul>
+                                <li><a href="#">Our Shop</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+                        </div> <!-- /.footer-widget -->
+                    </div> <!-- /.col-md-2 -->
+
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.main-footer -->
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <span>Сайт создан &copy; 2021 год <a href=".">Лучшая работа в такси</a></span>
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.bottom-footer -->
+    </footer> <!-- /.site-footer -->
+</body>
+</html>

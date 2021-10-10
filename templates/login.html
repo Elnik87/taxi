@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h3 class="widget-title" style="text-align: center" >Авторизация</h3>
+                <div class="contact-form">
+                    <form action="/login" name="contactform" id="contactform" method="post">
+                        <p>
+                            <input name="username" type="text" id="username" placeholder="Введите свое имя">
+                        </p>
+                        <p>
+                            <input name="password" type="text" id="password" placeholder="Введите пароль">
+                        </p>
+                        <input type="submit" class="mainBtn" value="Авторизоваться">
+                    </form>
+                </div> <!-- /.contact-form -->
+            </div>
+        </div>
+    </div>
+</div> <!-- /.content-section -->
+
+{% endblock %}
